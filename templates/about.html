@@ -1,0 +1,14 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="home">
+<h2>This is About page</h2>
+<h3>This was added later</h3>
+<p><input id="input"><input type="button" id="button" value="click"></p>
+</div>
+<script>
+document.getElementById('button').onclick=function(){
+  var value1 = document.getElementById('input').value;
+  alert("You entered: " + value1);
+}
+</script>
+{%endblock%}
